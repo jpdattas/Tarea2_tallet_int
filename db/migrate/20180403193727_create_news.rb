@@ -4,7 +4,6 @@ class CreateNews < ActiveRecord::Migration[5.1]
       t.string :title
       t.string :body
       t.string :subtitle
-      t.has_many :comments
 
       t.timestamps
     end

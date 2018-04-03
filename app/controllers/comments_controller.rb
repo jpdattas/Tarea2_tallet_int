@@ -3,7 +3,8 @@ class CommentsController < ApplicationController
 
   # GET /comments
   def index
-    @comments = Comment.all
+    @New = New.find(params[:news_id])
+    @comments = @New.comments.all
 
     render json: @comments
   end
